@@ -24,7 +24,7 @@ module.exports = ({ env }) => ({
       database: env("DATABASE_NAME", "sorasodb"),
       user: env("DATABASE_USERNAME", "thanapol"),
       password: env("DATABASE_PASSWORD", "Shadow123"),
-      ssl: env.bool("DATABASE_SSL", false) && {
+      ssl: env.bool("DATABASE_SSL", true) && {
         rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false),
       },
     },
