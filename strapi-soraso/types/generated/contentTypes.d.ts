@@ -368,6 +368,7 @@ export interface ApiBlogBlog extends Schema.CollectionType {
     singularName: 'blog';
     pluralName: 'blogs';
     displayName: 'Blog';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -447,6 +448,13 @@ export interface ApiBlogBlog extends Schema.CollectionType {
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
+    type: Attribute.Enumeration<['Blog', 'News', 'Testimonials', 'Other']> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Attribute.DefaultTo<'Blog'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
