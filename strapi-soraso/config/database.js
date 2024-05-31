@@ -1,3 +1,4 @@
+//local
 // module.exports = ({ env }) => ({
 //   connection: {
 //     client: "postgres",
@@ -14,7 +15,7 @@
 //   },
 // });
 
-
+//prod
 module.exports = ({ env }) => ({
   connection: {
     client: "postgres",

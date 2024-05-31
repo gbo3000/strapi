@@ -7,10 +7,10 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool("WEBHOOKS_POPULATE_RELATIONS", false),
   },
+  //comment below for local and change envlocal to env
   url: "https://blogging.soraso.net",
   proxy: {
     enabled: true,
     ssl: true,
   },
 });
-//test
