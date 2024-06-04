@@ -501,8 +501,7 @@ export interface ApiTutorialTutorial extends Schema.CollectionType {
         i18n: {
           localized: true;
         };
-      }> &
-      Attribute.DefaultTo<'| Soraso Tutorials'>;
+      }>;
     Content: Attribute.RichText &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -537,13 +536,6 @@ export interface ApiTutorialTutorial extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    Product: Attribute.String &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     Published: Attribute.Date &
       Attribute.Required &
       Attribute.SetPluginOptions<{
@@ -558,6 +550,30 @@ export interface ApiTutorialTutorial extends Schema.CollectionType {
         };
       }> &
       Attribute.DefaultTo<false>;
+    Product: Attribute.Enumeration<
+      [
+        'PMS',
+        'POS',
+        'BOS',
+        'ECOMMERCE',
+        'GSA',
+        'CUSTOM',
+        'INTEGRATION',
+        'SORASO_APP'
+      ]
+    > &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Main_feature: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

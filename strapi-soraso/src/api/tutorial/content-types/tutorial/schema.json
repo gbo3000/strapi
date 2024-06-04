@@ -39,8 +39,7 @@
         }
       },
       "type": "string",
-      "required": true,
-      "default": "| Soraso Tutorials"
+      "required": true
     },
     "Content": {
       "pluginOptions": {
@@ -86,15 +85,6 @@
       },
       "type": "string"
     },
-    "Product": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true
-    },
     "Published": {
       "pluginOptions": {
         "i18n": {
@@ -112,6 +102,33 @@
       },
       "type": "boolean",
       "default": false
+    },
+    "Product": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "PMS",
+        "POS",
+        "BOS",
+        "ECOMMERCE",
+        "GSA",
+        "CUSTOM",
+        "INTEGRATION",
+        "SORASO_APP"
+      ],
+      "required": true
+    },
+    "Main_feature": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
