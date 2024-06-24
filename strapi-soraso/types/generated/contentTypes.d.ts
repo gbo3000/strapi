@@ -901,13 +901,13 @@ export interface ApiEventEvent extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    FromDate: Attribute.DateTime &
+    FromDate: Attribute.Date &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    ToDate: Attribute.DateTime &
+    ToDate: Attribute.Date &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -951,6 +951,24 @@ export interface ApiEventEvent extends Schema.CollectionType {
       }>;
     Intro: Attribute.String &
       Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Location: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    FromTime: Attribute.Time &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    ToTime: Attribute.Time &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
