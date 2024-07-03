@@ -841,6 +841,7 @@ export interface ApiBlogBlog extends Schema.CollectionType {
         };
       }>;
     Featured_image: Attribute.Media &
+      Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
