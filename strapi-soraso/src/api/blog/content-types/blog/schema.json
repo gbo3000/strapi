@@ -50,7 +50,8 @@
           "localized": true
         }
       },
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "Meta_title": {
       "pluginOptions": {
@@ -102,7 +103,8 @@
         }
       },
       "type": "text",
-      "maxLength": 255
+      "maxLength": 255,
+      "required": true
     },
     "type": {
       "pluginOptions": {

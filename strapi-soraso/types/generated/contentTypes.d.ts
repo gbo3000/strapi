@@ -808,6 +808,7 @@ export interface ApiBlogBlog extends Schema.CollectionType {
         };
       }>;
     Published: Attribute.Date &
+      Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -846,6 +847,7 @@ export interface ApiBlogBlog extends Schema.CollectionType {
         };
       }>;
     Summary: Attribute.Text &
+      Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
