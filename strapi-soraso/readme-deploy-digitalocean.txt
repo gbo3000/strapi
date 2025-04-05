@@ -46,12 +46,13 @@ Updating a Strapi content type on a production server hosted on DigitalOcean inv
     npm run build
     ```
 
-    login as thanapol to see pm2
+    login as thanapol to see pm2 using 'su thanapol'
+    ```sh
 
 8. **Restart your Strapi server**:
     Depending on how you have set up your Strapi project (e.g., using PM2, Docker, etc.), restart the server to apply the changes. For example, with PM2:
     ```sh
-    pm2 restart strapi_app
+    pm2 restart strapi-app
     ```
 
     If using Docker:
