@@ -15,7 +15,7 @@ Updating a Strapi content type on a production server hosted on DigitalOcean inv
 
 2. **Navigate to your Strapi project directory**:
     ```sh
-    cd /path/to/your/strapi/project
+    cd /home/thanapol/strapi/strapi-soraso
     ```
 
 3. **Update your content type locally**:
