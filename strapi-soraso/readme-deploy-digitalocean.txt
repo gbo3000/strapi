@@ -24,6 +24,7 @@ Updating a Strapi content type on a production server hosted on DigitalOcean inv
 
 4. **Push changes to your version control system** (e.g., GitHub):
     ```sh
+    go to database and server config to check
     git add .
     git commit -m "Update content type"
     git push origin main
@@ -50,7 +51,7 @@ Updating a Strapi content type on a production server hosted on DigitalOcean inv
 8. **Restart your Strapi server**:
     Depending on how you have set up your Strapi project (e.g., using PM2, Docker, etc.), restart the server to apply the changes. For example, with PM2:
     ```sh
-    pm2 restart your_strapi_app
+    pm2 restart strapi_app
     ```
 
     If using Docker:
