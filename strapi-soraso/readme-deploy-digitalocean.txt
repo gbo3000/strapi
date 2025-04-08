@@ -70,3 +70,5 @@ Updating a Strapi content type on a production server hosted on DigitalOcean inv
 - **Environment Variables**: Make sure any new environment variables required by your changes are set correctly on your production server.
 
 If you encounter any issues or need specific commands for your setup (e.g., using Docker or a specific deployment strategy), feel free to ask!
+
+
